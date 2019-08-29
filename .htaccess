@@ -1,0 +1,5 @@
+# Rewrite any request for transactions2020/x to transactions/public
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ "%{DOCUMENT_ROOT}/transactions_slim/public/index.php" [L]
